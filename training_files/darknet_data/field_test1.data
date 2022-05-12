@@ -1,0 +1,3 @@
+classes= 1
+valid  = datasets/field_tests_images/darknet_labels/field_test1_valid.txt
+names  = datasets/field_tests_images/darknet_labels/sample.names

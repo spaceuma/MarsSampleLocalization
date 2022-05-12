@@ -1,0 +1,11 @@
+Edge TPU Compiler version 16.0.384591198
+Input: ./output_files/quantized_tflite/yolov3_tiny_REAL_best.tflite
+Output: ./output_files/compiled_coral/yolov3_tiny_REAL_best_edgetpu.tflite
+
+Operator                       Count      Status
+
+CONCATENATION                  1          Mapped to Edge TPU
+QUANTIZE                       4          Mapped to Edge TPU
+CONV_2D                        13         Mapped to Edge TPU
+RESIZE_NEAREST_NEIGHBOR        1          Mapped to Edge TPU
+MAX_POOL_2D                    6          Mapped to Edge TPU

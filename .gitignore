@@ -1,0 +1,8 @@
+__pycache__
+3rdparty_darknet/obj/
+3rdparty_darknet/darknet
+3rdparty_darknet/backup/
+3rdparty_darknet/results/
+bad.list
+training_files/generated_weights
+others

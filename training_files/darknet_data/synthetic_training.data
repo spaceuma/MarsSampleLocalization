@@ -1,0 +1,6 @@
+classes= 1
+train  = datasets/train_images/darknet_labels/synthetic_train.txt
+valid  = datasets/train_images/darknet_labels/synthetic_valid.txt
+names  = datasets/train_images/darknet_labels/sample.names
+backup = training_files/generated_weights
+
