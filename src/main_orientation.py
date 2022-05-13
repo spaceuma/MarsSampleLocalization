@@ -59,7 +59,7 @@ def obtain_orientation_errors(input_folder, output_folder):
     for i in range(0,len(orientation_file_list)):
         image_name = input_folder + orientation_file_list[i]
         img_file = cv2.imread(image_name)
-        height, width = img_file.shape
+        height, width, channels = img_file.shape
     
         input_bbox = ((0,0),(width-1,height-1))
         input_centroid = string_to_tuple(centroid_list[i])
@@ -96,8 +96,17 @@ def obtain_orientation_errors(input_folder, output_folder):
 
     avg_error = sum(abs_error_list)/len(abs_error_list)
     percentage_estimated  = (len(abs_error_list)/len(orientation_file_list))*100
-    print(percentage_estimated)
-    print(avg_error)
+
+    sum_dev  = 0
+    for i in range(0,len(abs_error_list)):
+        sum_dev = sum_dev + ((abs_error_list[i] - avg_error) ** 2)
+    
+    standard_deviation = math.sqrt( sum_dev/len(abs_error_list) )
+    
+    print("Images detected: " + str(percentage_estimated) + "%")
+    print("Average error: " + str(avg_error))
+    print("Standard deviation of error: " + str(standard_deviation))
+
 
     return abs_error_list
 
