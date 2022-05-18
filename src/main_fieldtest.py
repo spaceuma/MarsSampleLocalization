@@ -16,7 +16,7 @@ parser = argparse.ArgumentParser("Run TF-Lite YOLO-V3 Tiny inference.")
 parser.add_argument("--model", required=True, help="Model to load.")
 parser.add_argument("--anchors", required=True, help="Anchors file.")
 parser.add_argument("--classes", required=True, help="Classes (.names) file.")
-parser.add_argument("-t", "--threshold", help="Detection threshold.", type=float, default=0.5)
+parser.add_argument("-t", "--threshold", help="Detection threshold.", type=float, default=0.75)
 parser.add_argument("--valid_file", help="Valid file with image directories")
 parser.add_argument("--DEM", help="DEM generation")
 parser.add_argument("--save_folder", help="Folder to save images")
@@ -58,6 +58,12 @@ def find_match_depth(image_name, depth_file_list):
             selected_depth = depth_file_list[i]
             break
 
+    # No depth file found with greater time
+    if(selected_depth == 0):
+        # We select the last depth file
+        selected_depth = depth_file_list[-1]
+
+
     return selected_depth
 
 
@@ -66,7 +72,7 @@ def calculate_fieldtest_data(coral_module, image_file, depth_file, DEM):
     image_DEM = None
     x_offset  = None
     
-    boxes, scores, pred_classes, inference_time = coral_module.image_inference(image_file)
+    boxes, scores, pred_classes, inference_time = coral_module.image_inference(image_file, threshold = 0.75)
     detected_image = coral_module.draw_boxes(image_file, boxes, scores, pred_classes)
 
     if len(boxes) > 0:
