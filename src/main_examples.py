@@ -24,10 +24,6 @@ sample      = Sample(bbox=boxes[0])
 mask_sample = sample.binaryMaskedImage(input_image_1)
 result, object_pointA, object_pointB, global_orientation_image = sample.object2DOrientation(mask_sample)
 
-cv2.imshow('Orientation arrow',global_orientation_image)
-cv2.imwrite("./src/back_navcam/orient_right.png",global_orientation_image)
-cv2.waitKey(0)
-
 # We declare camera and load the depth file
 camera = CameraDepth(type_LOCCAM, width = 1024, height = 768, physical_height= 0.4)
 depth_matrix = camera.loadDepth(input_depth_1)
