@@ -2,9 +2,24 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6542933.svg)](https://doi.org/10.5281/zenodo.6542933)
 
 Code associated to the article: **"Hardware-accelerated Mars Sample Localization via deep transfer learning from photorealistic simulations".**
+A video of the performed laboratory test can be found at: https://www.youtube.com/watch?v=8_ymP6bg6-c
+
+![Preview gif of the laboratory tests video](docs/Preview_gif.gif)
 
 
-## Docker configuration 
+### Citation
+
+If this work was helpful for your research, please consider citing the following BibTeX entry:
+```BibTeX
+Fill
+```
+
+# Table of contents
+1. [Docker configuration](#dockerconf)
+2. [License](#license)
+3. [Filetree](#filetree)
+
+## Docker configuration <a name="dockerconf"></a>
 
 An Ubuntu host system is needed to run the files located at the repo, as we use a Nvidia GPU to train the network. First of all, we must install the docker core:
 
@@ -57,25 +72,14 @@ $ docker run -e DISPLAY=$DISPLAY -v /your/cloned/repo/location:/opt \
   bin/bash 
 ```
 
-## Lab tests videos
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/8_ymP6bg6-c/0.jpg)](https://www.youtube.com/watch?v=8_ymP6bg6-c)
-
-
-## Citation
-
-If this work was helpful for your research, please consider citing the following BibTeX entry:
-```BibTeX
-Fill
-```
-
-## License
+## License  <a name="license"></a>
 
 This repository is released under the MIT open source license as found in the [LICENSE](LICENSE) file.
 
 
-## General File Tree
-
+## File Tree <a name="filetree"></a>
+The general file tree view is the following:
 ```
 .
 ├── 3rdparty_coral
