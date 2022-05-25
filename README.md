@@ -15,9 +15,12 @@ Fill
 ```
 
 # Table of contents
-1. [Docker configuration](#dockerconf)
-2. [License](#license)
-3. [Filetree](#filetree)
+1. [Docker Configuration](#dockerconf)
+2. [Source Files Structure](#filestructure)
+3. [Experiments Scripts](#experiments)
+5. [File Tree](#filetree)
+6. [License](#license)
+
 
 ## Docker configuration <a name="dockerconf"></a>
 
@@ -71,11 +74,27 @@ $ docker run -e DISPLAY=$DISPLAY -v /your/cloned/repo/location:/opt \
   -t MarsSampleLocalization \
   bin/bash 
 ```
+## Source File Structure <a name="filestructure"></a>
 
+Main code files are found inside the **src/** folder. Several Python classes have been implemented:
 
-## License  <a name="license"></a>
+- **sample.py**: Employed for obtaining the 2D sample pose.
+- **coralmodule.py**: Used to run the network in the Google's Coral TPU and detect the sample in any image.
+- **cameradepth.py**: Used to implement both stereo cameras, create DEMs and convert 2D points to 3D world coordinates.
 
-This repository is released under the MIT open source license as found in the [LICENSE](LICENSE) file.
+Additionally, the script **main_examples.py** can be executed from root to test example applications with images and depth files located inside the folder **src/example_files**.
+
+## Experiments Scripts <a name="experiments"></a>
+
+Bash scripts have been generated to use some tools and perform several experiments once the Zenodo dataset is unzipped into the **datasets**/ folder:
+
+- **train_datasets.sh**: To train the neural networks with Darknet Framework. It is neccessary to modify the **./3rdparty_darknet/Makefile** to use the GPU for training.
+- **darknet_to_coral.sh**: To convert the trained Darknet network into a .tflite executable by the TPU.
+- **detect_datasets.sh**: To make detections of the sample tube with Darknet framework.
+- **test_coral.sh**: To make detections of the sample tube with Coral TPU and to extract metrics. Uses **./src/main_coraldetect.py** script.
+- **test_datasets.sh**: To extract metrics of the detections of the sample tube with Darknet framework.
+- **test_fieldtest.sh**: To perform the **Mars Sample Localization** procedure with the laboratiry test dataset. Uses **./src/main_fieldtest.py** script.
+- **test_orientation.sh**: Uses **./src/main_orientation.py** script. Employed fo testing the pose estimation algorithm.
 
 
 ## File Tree <a name="filetree"></a>
@@ -132,3 +151,7 @@ The general file tree view is the following:
 ├── test_orientation.sh
 └── train_datasets.sh
 ```
+
+## License  <a name="license"></a>
+
+This repository is released under the MIT open source license as found in the [LICENSE](LICENSE) file.
