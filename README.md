@@ -1,8 +1,8 @@
-## Hardware-accelerated Mars Sample Localization via deep transfer learning from photorealistic simulations
+# Mars Sample Localization
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6542933.svg)](https://doi.org/10.5281/zenodo.6542933)
 
 <p align="center">
-  <img src="docs/mars_logo.png" width="50%">
+  <img src="docs/mars_logo_thumbnail.png">
 </p>
 
 Code associated to the article: **"Hardware-accelerated Mars Sample Localization via deep transfer learning from photorealistic simulations".**
