@@ -1,6 +1,10 @@
 ## Hardware-accelerated Mars Sample Localization via deep transfer learning from photorealistic simulations
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6542933.svg)](https://doi.org/10.5281/zenodo.6542933)
 
+<p align="center">
+  <img src="docs/mars_logo.png" width="50%">
+</p>
+
 Code associated to the article: **"Hardware-accelerated Mars Sample Localization via deep transfer learning from photorealistic simulations".**
 A video of the performed laboratory test can be found at: https://www.youtube.com/watch?v=8_ymP6bg6-c
 
