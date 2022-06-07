@@ -1,6 +1,6 @@
 # Mars Sample Localization
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6542933.svg)](https://doi.org/10.5281/zenodo.6542933)
-
+[![arXiv](https://img.shields.io/badge/arXiv-2206.02622-b31b1b.svg)](https://arxiv.org/abs/2206.02622)  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6542933.svg)](https://doi.org/10.5281/zenodo.6542933) 
+ 
 <p align="center">
   <img src="docs/mars_logo_thumbnail.png">
 </p>
@@ -15,7 +15,15 @@ A video of the performed laboratory test can be found at: https://www.youtube.co
 
 If this work was helpful for your research, please consider citing the following BibTeX entry:
 ```BibTeX
-Fill
+@misc{sampleLoc2022CastillaArquillo,
+  doi = {10.48550/ARXIV.2206.02622},
+  url = {https://arxiv.org/abs/2206.02622},
+  author = {Castilla-Arquillo, Raúl and Pérez-del-Pulgar, Carlos Jesús and Paz-Delgado, Gonzalo Jesús and Gerdes, Levin},
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Hardware-accelerated Mars Sample Localization via deep transfer learning from photorealistic simulations},
+  publisher = {arXiv},
+  year = {2022},
+}
 ```
 
 # Table of contents
