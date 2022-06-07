@@ -6,10 +6,14 @@
 </p>
 
 Code associated to the article: **"Hardware-accelerated Mars Sample Localization via deep transfer learning from photorealistic simulations".**
-A video of the performed laboratory test can be found at: https://www.youtube.com/watch?v=8_ymP6bg6-c
+A video of the performed laboratory test can be found at: https://youtu.be/8_ymP6bg6-c
 
-![Preview gif of the laboratory tests video](docs/Preview_gif.gif)
+![]()
 
+[![Preview gif of the laboratory tests video][1]][2]
+
+[1]:  docs/Preview_gif.gif
+[2]:  https://youtu.be/8_ymP6bg6-c "Redirect to video"
 
 ### Citation
 
