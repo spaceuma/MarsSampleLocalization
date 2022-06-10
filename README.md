@@ -1,9 +1,16 @@
 # Mars Sample Localization
+
+<img src="docs/mars_logo_thumbnail.png" align="right" width="325">
+
 [![arXiv](https://img.shields.io/badge/arXiv-2206.02622-b31b1b.svg)](https://arxiv.org/abs/2206.02622)  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6542933.svg)](https://doi.org/10.5281/zenodo.6542933) 
- 
-<p align="center">
-  <img src="docs/mars_logo_thumbnail.png">
-</p>
+
+ *Author:* [R. Castilla Arquillo](https://github.com/raulcastar) [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-4203-8069)
+
+*Supervisor:* [Carlos J. Pérez del Pulgar](https://github.com/carlibiri) [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-5819-8310)
+
+*Contact info:* raulcastar@uma.es
+
+### Information
 
 Code associated to the article: **"Hardware-accelerated Mars Sample Localization via deep transfer learning from photorealistic simulations".**
 A video of the performed laboratory test can be found at: https://youtu.be/8_ymP6bg6-c
@@ -17,8 +24,7 @@ If this work was helpful for your research, please consider citing the following
 @misc{sampleLoc2022CastillaArquillo,
   doi = {10.48550/ARXIV.2206.02622},
   url = {https://arxiv.org/abs/2206.02622},
-  author = {Castilla-Arquillo, Raúl and Pérez-del-Pulgar, Carlos Jesús and Paz-Delgado, Gonzalo Jesús and Gerdes, Levin},
-  keywords = {Computer Vision and Pattern Recognition (cs.CV), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  author = {Castilla-Arquillo, R., Perez-del-Pulgar, C., Paz-Delgado, G. and Gerdes, L.},
   title = {Hardware-accelerated Mars Sample Localization via deep transfer learning from photorealistic simulations},
   publisher = {arXiv},
   year = {2022},
