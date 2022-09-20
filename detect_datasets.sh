@@ -5,11 +5,11 @@ file_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 cd "$file_path"
 
 # Flags to select type of weights and parameters
-REAL_WEIGHT=0
+REAL_WEIGHT=1
 SYNTHETIC_WEIGHT=0
 SYNTHETIC_AND_REAL_WEIGHT=1
 
-FIELD_TEST=1
+FIELD_TEST=2
 DETECTION_THRESHOLD=0.75
 
 ./generate_data.sh
