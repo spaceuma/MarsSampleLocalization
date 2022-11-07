@@ -21,12 +21,14 @@ A video of the performed laboratory test can be found at: https://youtu.be/8_ymP
 
 If this work was helpful for your research, please consider citing the following BibTeX entry:
 ```BibTeX
-@article{castilla2022hardware,
-  title={Hardware-accelerated Mars Sample Localization via deep transfer learning from photorealistic simulations},
-  author={Castilla-Arquillo, Ra{\'u}l and P{\'e}rez-del-Pulgar, Carlos Jes{\'u}s and Paz-Delgado, Gonzalo Jes{\'u}s and Gerdes, Levin},
-  journal={arXiv preprint arXiv:2206.02622},
-  year={2022}
+@article{Castilla2022MarsSampleLoc,
+         author = {R. Castilla-Arquillo and C. J. Perez-del-Pulgar and G. J. Paz-Delgado and L. Gerdes},	
+         title = {Hardware-accelerated Mars Sample Localization via deep transfer learning from photorealistic simulations},	
+         journal = {{IEEE} Robotics and Automation Letters},
+         doi = {10.1109/lra.2022.3219306},
+         year = {2022}
 }
+
 ```
 
 # Table of contents
